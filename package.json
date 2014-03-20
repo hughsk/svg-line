@@ -1,0 +1,39 @@
+{
+  "name": "svg-line",
+  "description": "Generate SVG paths for a line, d3-style",
+  "version": "0.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "plucker": "0.0.0"
+  },
+  "devDependencies": {
+    "tape": "^2.10.2",
+    "faucet": "^0.0.1",
+    "browserify": "^3.33.0",
+    "beefy": "^1.1.0"
+  },
+  "scripts": {
+    "test": "node test | faucet",
+    "start": "beefy -b node_modules/.bin/browserify example.js:bundle.js",
+    "prepublish": "browserify example.js -o bundle.js"
+  },
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughsk.io/)",
+  "license": "MIT",
+  "homepage": "http://hughsk.github.io/svg-line",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/svg-line"
+  },
+  "bugs": {
+    "url": "https://github.com/hughsk/svg-line/issues"
+  },
+  "keywords": [
+    "svg",
+    "line",
+    "d3",
+    "path",
+    "attribute",
+    "generate",
+    "d"
+  ]
+}
